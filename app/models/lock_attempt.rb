@@ -1,0 +1,2 @@
+class LockAttempt < ApplicationRecord
+end
