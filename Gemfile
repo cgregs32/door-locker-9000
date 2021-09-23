@@ -21,8 +21,13 @@ group :development, :test do
 end
 
 group :development do
-
+  
   gem 'web-console', '>= 4.1.0'
+  
+  gem 'chromedriver-helper'
+  gem "selenium-webdriver"
+  gem 'capybara'
+  gem 'webdrivers'
 
 
   gem 'rack-mini-profiler', '~> 2.0'

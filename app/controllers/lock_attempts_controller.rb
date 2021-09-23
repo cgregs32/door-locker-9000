@@ -8,15 +8,20 @@ class LockAttemptsController < ApplicationController
   # POST /lock_attempts or /lock_attempts.json
   def create
     login
+    lock
   end
 
   private
 
   def login
     url = 'https://www.mysubaru.com/login.html'
-    response = LockAttempt.login(url)
-    response[:status] == :completed && response[:error].nil?
+    response = Login.login(url)
   rescue StandardError => e
     flash.now[:alert] = "Error: #{e}"
+  end
+
+  def lock
+    url = "https://www.mysubaru.com/"
+    response = LockAttempt.lock(url)
   end
 end
