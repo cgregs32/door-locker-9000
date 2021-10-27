@@ -64,6 +64,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     archive-zip (0.12.0)
       io-like (~> 0.3.0)
+    ast (2.4.2)
     bindex (0.8.1)
     bootsnap (1.9.1)
       msgpack (~> 1.0)
@@ -102,6 +103,7 @@ GEM
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     io-like (0.3.1)
+    jaro_winkler (1.5.4)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
     kimurai (1.4.0)
@@ -153,6 +155,9 @@ GEM
     nokogiri (1.12.4-x86_64-darwin)
       racc (~> 1.4)
     ntlm-http (0.1.1)
+    parallel (1.21.0)
+    parser (3.0.2.0)
+      ast (~> 2.4.1)
     pg (1.2.3)
     pmap (1.1.1)
     poltergeist (1.18.1)
@@ -202,12 +207,21 @@ GEM
       method_source
       rake (>= 0.13)
       thor (~> 1.0)
+    rainbow (3.0.0)
     rake (13.0.6)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
     rbcat (0.2.1)
     regexp_parser (2.1.1)
+    rubocop (0.77.0)
+      jaro_winkler (~> 1.5.1)
+      parallel (~> 1.10)
+      parser (>= 2.6)
+      rainbow (>= 2.2.2, < 4.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (>= 1.4.0, < 1.7)
+    ruby-progressbar (1.11.0)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -241,6 +255,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.8)
+    unicode-display_width (1.6.1)
     web-console (4.1.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -267,6 +282,7 @@ GEM
     zeitwerk (2.4.2)
 
 PLATFORMS
+  x86_64-darwin-18
   x86_64-darwin-19
 
 DEPENDENCIES
@@ -281,6 +297,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
+  rubocop
   sass-rails (>= 6)
   selenium-webdriver
   spring
@@ -294,4 +311,4 @@ RUBY VERSION
    ruby 2.6.3p62
 
 BUNDLED WITH
-   2.2.27
+   2.2.29
