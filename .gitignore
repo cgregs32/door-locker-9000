@@ -18,6 +18,9 @@
 !/tmp/pids/
 !/tmp/pids/.keep
 
+# Ingore IDEA Configs
+.idea/
+
 # Ignore uploaded files in development.
 /storage/*
 !/storage/.keep
