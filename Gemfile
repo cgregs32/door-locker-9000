@@ -36,4 +36,8 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem "simplecov"
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
