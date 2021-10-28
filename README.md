@@ -5,20 +5,16 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.6.3  
 
-* System dependencies
+* System dependencies:  
+    Postgres, Yarn
 
-* Configuration
+* Database creation:  
+    Run `rails db:create` to create a local database
 
-* Database creation
+* How to run the test suite:   
+    Run `rspe`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Deployment instructions:  
+    To be written
